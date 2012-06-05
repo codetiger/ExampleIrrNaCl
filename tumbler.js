@@ -100,10 +100,6 @@ tumbler.Application.prototype.assert = function(cond, message) {
   }
 }
 
-function handleMessage_(message_event) {
-  console.log(message_event.data);
-}
-
 /**
  * The run() method starts and 'runs' the application.  The trackball object
  * is allocated and all the events get wired up.

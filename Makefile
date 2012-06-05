@@ -32,7 +32,7 @@ NACL_SDK_ROOT?=$(abspath $(dir $(THIS_MAKEFILE))../..)
 
 # Project Build flags
 WARNINGS:=-Wno-long-long -Wall
-CXXFLAGS:=-std=gnu++98 $(WARNINGS) -I../IrrNaCl/include
+CXXFLAGS:=-pthread -std=gnu++98 $(WARNINGS) -I../IrrNaCl/include
 
 #
 # Compute tool paths

@@ -3,6 +3,7 @@
 // found in the LICENSE file.
 
 
+#include <pthread.h>
 #include "ppapi/cpp/completion_callback.h"
 #include "ppapi/gles2/gl2ext_ppapi.h"
 

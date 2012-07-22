@@ -213,7 +213,7 @@ void main(void)
 	for(int i = 0; i < MAX_TEXTURE_UNITS; ++i)
 		varTexCoord[i] = vec4(0.0);
 	
-	if( uUseTexture[0])
+	//if( uUseTexture[0])
 	{
 		if(uVRenderMode == SphereMap || uVRenderMode == Reflection2Layer)
 		{

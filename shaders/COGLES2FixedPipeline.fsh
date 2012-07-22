@@ -68,8 +68,8 @@ vec4 renderSolid(void)
 {
 	vec4 color = varVertexColor;
 	vec4 texel = texture2D(uTextureUnit0, varTexCoord[0].xy);
-	if(uUseTexture[0])
-		color *= texel;
+	//if(uUseTexture[0])
+		color = texel;
 	return color;
 }
 
@@ -178,5 +178,6 @@ void main (void)
 			
 	if(uAlphaTest && uAlphaValue > gl_FragColor.a)
 		discard;
-	
+
+	gl_FragColor = texture2D(uTextureUnit0, varTexCoord[0].xy);
 }

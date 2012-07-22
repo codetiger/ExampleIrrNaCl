@@ -17,6 +17,7 @@ export CYGWIN
 
 # Declare the ALL target first, to make the 'all' target the default build
 all: $(PROJECT)_x86_32.nexe
+# $(PROJECT)_x86_64.nexe
 
 # Define 32 bit compile and link rules for main application
 x86_32_OBJS:=$(patsubst %.cc,%_32.o,$(CXX_SOURCES))

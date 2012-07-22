@@ -342,14 +342,14 @@ void RendererCallBack(void* data, int32_t result) {
 	EventInstance *eventInstance = static_cast<EventInstance*>(data);
 //	eventInstance->PostMessage(pp::Var("flush_callback\n"));
 	eventInstance->DrawSelf();
-	
+	/*
 	endTime = _getTime();
 	std::ostringstream stream;
 	stream	<< "Current FPS = "
 			<< 1000.0/(endTime - startTime)
 			<< "\n";
 	eventInstance->PostMessage(stream.str());
-	startTime = _getTime();
+	startTime = _getTime();*/
 }
 
 class EventModule : public pp::Module {
